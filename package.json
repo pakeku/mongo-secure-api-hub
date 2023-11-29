@@ -2,9 +2,9 @@
   "name": "mongo-secure-api-hub",
   "version": "1.0.0",
   "description": "A mongo extension to build secure apis - mostly for my projects. ",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/index.js",
     "build": "tsc",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts"
   },
