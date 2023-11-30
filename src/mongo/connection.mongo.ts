@@ -14,7 +14,7 @@ export const connectToDatabase = async (): Promise<MongoClient> => {
     return client;
 };
 
-export const disconnectFromDatabase = async (client: MongoClient | null): Promise<void> => {
+export const disconnectFromDatabase = async (client: MongoClient | null = null): Promise<void> => {
     // Only attempt to close the connection if the client is not null
     if (client) {
         await client.close();
