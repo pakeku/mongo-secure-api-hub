@@ -3,8 +3,9 @@ import { collectionsRouter } from './routes/collections.route';
 
 const app = express();
 
+// ... middleware 
+app.use(express.json());
+// ... routes
 app.use('/collections', collectionsRouter);
-
-// ... middleware and routes
 
 export default app;
